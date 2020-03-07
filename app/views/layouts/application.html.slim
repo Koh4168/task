@@ -9,8 +9,11 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     .app-title.navbar.navbar-expand-md.navbar-light.bg-light
-      .navbar-brand Taskleaf2
-    .container
-      - if flash.notice.present?
-        .alert.alert-success = flash.notice
+    .navbar-brand Taskleaf
+    
+   
+
+  .container
+    - if flash.notice.present?
+      .alert.alert-success=flash.notice
     = yield
